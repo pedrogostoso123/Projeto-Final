@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0; /* Remover padding do body */
+}
+
+header {
+    background: linear-gradient(rgb(57, 224, 224), #2c76d6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Garantir que o header ocupe 100% da largura */
+    box-sizing: border-box; /* Incluir padding na largura total */
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90e0ef;
+}
+
+#about-site {
+    background-color: #e3f2fd;
+    padding: 3rem 1rem; /* Aumentado para dar mais espaçamento */
+    text-align: center;
+}
+
+#about-site .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about-site h2 {
+    font-size: 2.5rem; /* Aumentado para destacar mais o título */
+    margin-bottom: 1.5rem;
+    color: #005f73; /* Mudança para uma cor mais forte e impactante */
+}
+
+#about-site p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+#articles {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.post {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-content h3 {
+    font-size: 2rem; /* Maior para dar mais destaque */
+    color: #005f73; /* Cor mais forte para o título do artigo */
+}
+
+.post-content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 2rem; /* Aumentado para criar mais espaço */
+    background-color: #0077b6; /* Cor mais escura para chamar mais atenção */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #90e0ef;
+}
+
+footer {
+    background: linear-gradient(rgb(57, 224, 224), #2c76d6);
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Mais espaçamento */
+    width: 100%; /* Garantir que o footer ocupe 100% da largura */
+    box-sizing: border-box; /* Incluir padding na largura total */
+    margin-top: 3rem; /* Mais espaço entre o conteúdo e o rodapé */
+}

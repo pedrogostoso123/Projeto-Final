@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-back {
+  margin-top: 0.5rem;
+}
+
+.start-quiz, .button-back {
+  width: 12rem;
+}
+
+body {
+  background-color: #80bfe4;
+  background-image: url('imagens/img03quizz.png'), url('imagens/'), url('imagens/igm02quizz.'), url('imagens/img02quizz.png');
+  background-size: 400px 400px, 400px 400px, 400px 400px, 600px 500px; /* Tamanhos grandes para as 4 imagens */
+  background-position: top left, top right, bottom left, bottom right; /* Posicionando nos 4 cantos */
+  background-repeat: no-repeat; /* Evita repetição das imagens */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  background: linear-gradient(rgb(57, 224, 224), #2c76d6);
+  width: 90%;
+  max-width: 800px;
+
+  border: 0.2rem solid #000000;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.answers-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #4863f7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+  margin: 0.4rem;
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #aff0ba;
+}
+
+.incorrect {
+  background-color: #f74747;
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    background-size: cover; /* Cobrir toda a área */
+    background-repeat: no-repeat; /* Não repetir as imagens de fundo */
+    position: relative; /* Para posicionamento absoluto das imagens adicionais */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 10%; /* Ajuste conforme necessário */
+    left: 2%; /* Ajuste a posição da primeira imagem à esquerda */
+    width: 600px; /* Tamanho ajustado */
+    height: 400px; /* Tamanho ajustado */
+    background-image: url('imagens/Design_sem_nome-removebg-preview.png'); /* Adicione uma imagem divertida */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+body::after {
+    content: ''; /* Adiciona conteúdo vazio */
+    position: absolute;
+    bottom: 5%; /* Ajusta a posição para a parte inferior */
+    right: 2%; /* Posição à direita */
+    width: 500px; /* Tamanho ajustado */
+    height: 250px; /* Tamanho ajustado */
+    background-image: url('imagens/img10.png'); /* Adicione outra imagem divertida */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+header {
+    background: linear-gradient(rgb(57, 224, 224), #2c76d6);
+    color: white;
+    padding: 10px; /* O mesmo valor do rodapé para alinhamento */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+main {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #2c76d6; /* Borda em volta do conteúdo */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: white; /* Fundo branco para o conteúdo */
+    margin: 20px auto; /* Espaçamento ao redor do conteúdo, centralizado */
+    max-width: 800px; /* Largura máxima para o conteúdo */
+}
+
+h1 {
+    color: #2c76d6; /* Cor do h1 */
+    font-size: 2.5em; /* Tamanho do cabeçalho principal */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c76d6; /* Padronizando a cor do h2 */
+    font-size: 2em; /* Tamanho do segundo cabeçalho */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho padrão dos parágrafos */
+    max-width: 800px; /* Largura máxima dos parágrafos */
+    margin-bottom: 30px; /* Espaçamento inferior dos parágrafos */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Manter a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+.button-container {
+    margin: 20px 0; /* Espaço ao redor dos botões */
+}
+
+.btn {
+    background-color: #2c76d6; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 5px; /* Espaçamento entre os botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    font-weight: bold; /* Negrito no texto */
+    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+}
+
+.btn:hover {
+    background-color: #90e0ef; /* Cor ao passar o mouse */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center; /* Certifica que o texto está centralizado */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    background: linear-gradient(rgb(57, 224, 224), #2c76d6);
+    color: white;
+    width: 100%; /* Garante que o rodapé ocupe 100% da largura */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    margin-top: auto; /* Para garantir que fique no final da página */
+}
